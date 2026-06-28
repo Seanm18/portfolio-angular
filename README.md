@@ -1,59 +1,95 @@
-# Portafolio
+# Portafolio Personal — Sean De Paz
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.10.
+Sitio web personal desarrollado con **Angular 19** y **CSS** para mostrar mis proyectos, habilidades y medios de contacto.
 
-## Development server
+---
 
-To start a local development server, run:
+## Tecnologías utilizadas
+
+- [Angular 19](https://angular.io/) — Framework principal
+- TypeScript — Lenguaje base
+- CSS (Component Scoped) — Estilos por componente
+- [AOS](https://michalsnik.github.io/aos/) — Animaciones al hacer scroll
+- Google Fonts (Poppins + Inter) — Tipografía
+
+---
+
+## Estructura del proyecto
+
+```
+src/
+  app/
+    components/
+      navbar/       — Barra de navegación
+      hero/         — Sección principal con foto
+      about/        — Sobre mí y skills
+      projects/     — Cards de proyectos
+      contact/      — Formulario de contacto
+      footer/       — Footer con links
+  styles.css        — Estilos globales
+  index.html        — HTML principal
+```
+
+---
+
+## Secciones
+
+- **Hero** — Presentación con nombre, título profesional y foto
+- **Sobre mí** — Bio, habilidades técnicas como Angular, Python, ML, MySQL, TypeScript
+- **Proyectos** — Cards con descripción, tecnologías y links a GitHub
+- **Contacto** — Formulario de contacto
+- **Footer** — Links a redes sociales
+
+---
+
+## Proyectos destacados
+
+### Housing Price Predictor
+Modelo de Machine Learning que predice precios de vivienda usando Random Forest sobre el dataset California Housing.
+- **Tecnologías:** Python, Scikit-learn, Pandas, Random Forest
+
+### RAG Chatbot con IA
+Chatbot inteligente que responde preguntas basándose en documentos propios usando ChromaDB y LLaMA 3.1 vía Groq API.
+- **Tecnologías:** Python, ChromaDB, Groq API, LLaMA 3.1
+
+### Portafolio Personal
+Este mismo sitio web desarrollado con Angular 19 y CSS.
+- **Tecnologías:** Angular, TypeScript, CSS, AOS
+
+---
+
+## Instalación y uso
 
 ```bash
+# Clonar el repositorio
+git clone https://github.com/Seanm18/Portafolio.git
+
+# Entrar al proyecto
+cd portafolio
+
+# Instalar dependencias
+npm install
+
+# Correr en local
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Abre http://localhost:4200 en tu navegador.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Deploy
 
-```bash
-ng generate component component-name
-```
+El proyecto está desplegado en Vercel / Netlify — próximamente.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Contacto
 
-## Building
+- **GitHub:** https://github.com/Seanm18
+- **Workana:** próximamente
+- **Email:** disponible en el formulario del sitio
 
-To build the project run:
+---
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+© 2026 Sean De Paz. Todos los derechos reservados.
