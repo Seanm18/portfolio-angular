@@ -14,3 +14,15 @@ body {
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: translateX(0) !important;
+  }
+}
