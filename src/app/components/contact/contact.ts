@@ -13,6 +13,7 @@ export class ContactComponent {
 
   sendEmail(e: Event) {
     e.preventDefault();
+    console.log('Enviando...');
 
     emailjs.sendForm(
       'service_ojnpyuu',
@@ -21,7 +22,8 @@ export class ContactComponent {
       'JA24JiIonSxQxJDCQ'
     ).then(() => {
       alert('Mensaje enviado correctamente');
-    }).catch(() => {
+    }).catch((error) => {
+      console.log('Error:', error);
       alert('Error al enviar el mensaje');
     });
   }
