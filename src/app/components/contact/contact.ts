@@ -15,10 +15,12 @@ export class ContactComponent {
     e.preventDefault();
     console.log('Enviando...');
 
+    const form = document.querySelector('.form') as HTMLFormElement;
+
     emailjs.sendForm(
       'service_ojnpyuu',
       'template_pv4fvbo',
-      e.target as HTMLFormElement,
+      form,
       'JA24JiIonSxQxJDCQ'
     ).then(() => {
       alert('Mensaje enviado correctamente');
