@@ -1,15 +1,15 @@
 <div class="container" id="contact">
     <div class="cta-form" data-aos="fade-up" data-aos-delay="200">
       <h2>Contactame</h2> 
-      <p>¿Tienes algun proyecto en mente?. Escribeme!</p>
+      <p>¿Tienes algun proyecto en mente?. ¡Escribeme!</p>
     </div>
-    <form (ngSubmit)="sendEmail($event)" class="form" data-aos="fade-up" data-aos-delay="200">
-      
-      <input type="text" name="from_name" placeholder="Nombre" class="form__input" />
-      <input type="email" name="from_email" placeholder="Email" class="form__input" />
-      <input type="text" name="subject" placeholder="Asunto" class="form__input" />
-      <textarea name="message" placeholder="Mensaje" class="form__input"></textarea>
+    <form class="form" data-aos="fade-up" data-aos-delay="200">
+  
+  <input type="text" name="from_name" placeholder="Nombre" class="form__input" />
+  <input type="email" name="from_email" placeholder="Email" class="form__input" />
+  <input type="text" name="subject" placeholder="Asunto" class="form__input" />
+  <textarea name="message" placeholder="Mensaje" class="form__input"></textarea>
 
-      <button type="submit">Enviar mensaje</button>
-    </form>
+  <button type="button" (click)="sendEmail($event)">Enviar mensaje</button>
+</form>
 </div>
